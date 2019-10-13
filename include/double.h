@@ -17,7 +17,6 @@ namespace lr3 {
         Double operator/(const Double &other) const;
 
         Double operator^(const Double &exponent) const;
-        Double operator^(int exponent) const;
 
         double value = 0;
     };

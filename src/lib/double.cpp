@@ -28,10 +28,6 @@ Double Double::operator^(const Double &exponent) const {
     return {pow(value, exponent.value)};
 }
 
-Double Double::operator^(int exponent) const {
-    return this->operator^(Double(exponent));
-}
-
 Double Double::operator/(const Double &other) const {
     return {value / other.value};
 }
