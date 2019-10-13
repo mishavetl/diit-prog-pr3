@@ -4,6 +4,9 @@
 #include "config.h"
 
 namespace lr3 {
+    /**
+     * Double - primitive double data type wrapper
+     */
     class Double {
     public:
         Double(double value) : value(value) {}
@@ -16,6 +19,11 @@ namespace lr3 {
         Double operator*(const Double &other) const;
         Double operator/(const Double &other) const;
 
+        /**
+         * Exponentiation operator
+         * @param exponent
+         * @return pow(value, exponent)
+         */
         Double operator^(const Double &exponent) const;
 
         double value = 0;
